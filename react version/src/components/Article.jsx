@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
 // Images
-import image1 from '../img/blog-image-1.jpg';
-import image2 from '../img/blog-image-2.jpg';
+import image1 from "../../public/img/blog-image-1.jpg";
+import image2 from "../../public/img/blog-image-2.jpg";
 
 function Article({ date, title, imageSrc, description }) {
   const images = {
-    'blog-image-1.jpg': image1,
-    'blog-image-2.jpg': image2,
+    "blog-image-1.jpg": image1,
+    "blog-image-2.jpg": image2,
   };
 
   return (
@@ -16,7 +16,9 @@ function Article({ date, title, imageSrc, description }) {
       <h4>{title}</h4>
       <img src={images[imageSrc]} alt={title} />
       <p>{description}</p>
-      <a href="#" className="continue-link">Continues...</a>
+      <a href="#" className="continue-link">
+        Continues...
+      </a>
     </article>
   );
 }
